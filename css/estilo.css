@@ -21,6 +21,9 @@ body, html{
 	height: 100vh;
 }
 
+.espsection{
+	padding: 5rem 0;
+}
 @media (max-width: 576px){
 	.bg_video{
 		left: -15rem;
@@ -42,6 +45,10 @@ body, html{
 }
 h1, h2, h3, h4 {
 	font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+	text-transform: uppercase;
 }
 
 
@@ -76,6 +83,16 @@ h3{
 	display:block;
 	width: 5rem;
 	border-bottom: 2px solid #081738;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	margin: auto;
+}
+
+.divisor3:after {
+	content:'';
+	display:block;
+	width: 5rem;
+	border-bottom: 2px solid white;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 	margin: auto;
@@ -126,4 +143,27 @@ h3{
 .destaq{
 	font-weight: bold;
 	font-size: 1.3em;
+}
+
+.img-sobremim{
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+}
+
+/*SECTION trabalhos*/
+
+.esptrabalhos{
+	padding: 10rem 0;
+}
+.trabalhos {
+	background-image: url('../images/bgtrabalhos.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*SECTION contatos*/
+
+.bg-contato{
+	background-color: #081738;
 }
