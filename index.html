@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bem-vindo(a) ao meu portfólio! - LBoarro</title>
+    <title>Butterfly Types</title>
     <link rel="icon" href="imagens/favicon.png">
 
+    <!--Font Style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Bootstrap -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,8 +33,8 @@
 
     <header>
       <div class="menu-fixed">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">LB</a>
+        <nav class="navbar navbar-expand-lg navbar-fixed">
+          <a class="navbar-brand" href="#"><img src="images/lboarrobrancadeitadasombra.png" alt="Logo Lara Boarro"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
@@ -36,15 +43,21 @@
             </span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav justify-content-around" style="width:55%;">
+            <ul class="navbar-nav justify-content-around">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Sobre mim<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Palos<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trabalhos</a>
+                <a class=" bg-nav-green2 nav-link" href="#">Monarca</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link bg-nav-green1" href="#">Andorinha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-nav-green4" href="#">Alexandra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-nav-green3" href="#">Morpho</a>
               </li>
             </ul>
           </div>
@@ -52,97 +65,11 @@
       </div>
     </header>
 
-
-    <section style="height:100vh;">
-      <video autoplay loop class="bg_video">
-        <source src="videos/particulas2.mp4" type="video/mp4">
-        <source src="videos/Particulasweb-2.webm" type="video/webm">
-      </video>
-
-        <div class="container h-100">
-          <div class="row justify-content-start align-items-center h-100">
-            <div class="col-md-6">
-              <h1 class="tituloprinc colorwhite divisor text-sombra">Lara Boarro</h1>
-              <h3 class="colorwhite text-sombra">Web Designer</h3>
-              <h3 class="colorwhite text-sombra">UI/UX</h3>
-              <h3 class="colorwhite text-sombra divisor">Dev Front-End</h3>
-              <p class="colorwhite text-sombra">Designer, técnicas de UI/UX e código completamente desenvolvidos e criados por mim</p>
-
-              <a href="#" class="seta-conteudo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-              </a>
-
-            </div>
-          </div>
-        </div>      
-      
-    </section>
-
-    <section class="sobremim espsection">
-      <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12">
-              <h2 class="divisor2 colorazulescuro text-center">Sobre mim</h2>
-            </div>
-
-            <div class="col-12">
-              <p class="colorazulescuro"><span class="destaq">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit. Vestibulum cursus nec neque ac congue. Quisque id nunc id massa condimentum maximus. Sed dictum, lorem a rutrum malesuada, elit lectus viverra lectus, at sagittis dui justo eu diam. Aliquam nec facilisis diam, non aliquam turpis. Donec a tristique felis. Proin cursus viverra egestas. In in euismod lacus, non feugiat lacus. Fusce enim sem, iaculis ac dapibus vitae, congue ac diam. Mauris vulputate aliquam vehicula. Donec cursus nec felis at rhoncus.
-              </p>
-            </div>
-
-            <div class="col-md-6">
-              <p>Ut egestas luctus risus, vel ornare nulla accumsan eu. Nunc faucibus nisl vitae felis posuere convallis. Praesent nec odio pulvinar, auctor risus nec, lobortis ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vehicula condimentum risus, id fermentum enim varius sit amet. Duis imperdiet sed tortor quis vehicula. Proin sed lectus viverra, rhoncus purus sit amet, aliquam sapien. Nullam rhoncus, nunc at viverra volutpat, odio mi dictum justo, sed eleifend quam massa non tortor. Vivamus finibus, diam vel auctor mattis, ipsum neque volutpat massa, feugiat tincidunt mi sem non libero. In leo erat, congue eget nisl vitae, molestie ultricies tortor. Vestibulum ullamcorper neque eget sapien pulvinar, quis semper urna blandit. Mauris facilisis suscipit dui, quis efficitur nibh malesuada a. Suspendisse aliquam scelerisque sapien sit amet dapibus. Vivamus sed rhoncus turpis. Mauris et luctus lectus. Sed finibus bibendum dignissim. </p>
-            </div>
-
-            <div class="col-md-6 d-flex justify-content-center">
-              <figure>
-                <img class="img-sobremim" src="images/perfillara.png" alt="Foto de perfil Lara Boarro">
-              </figure>
-            </div>
-
-          </div>
-      </div>
-    </section>
-
-    <section class="trabalhos">
-      <div class="polygon" style="height: 100px;">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 100%;width: 100%;">
-          <polygon points="0 0, 50 100, 100 0" opacity="1" style="fill:white;"></polygon>
-        </svg>
-      </div>
-      
-
-      <div class="container esptrabalhos">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="colorwhite">Esse é o meu primeiro projeto...</h2>
-          </div>
-
-          <div class="col-md-6">
-            <p class="colorwhite">Nesse layout visei em destacar umas das coisas que mais me chamam atenção em sites: a divisão de sessões com backgrounds bem definidos e que tomam 100% da tela. Um Layout bem simples e direto, com foco no que quero mostrar. 
-              Acredito muito no lema de "menos é mais" e gosto de reproduzir isso em todo tipo de trabalho que realizo.</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="polygon" style="height: 100px;">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 100%;width: 100%;">
-          <polygon points="0 100, 50 0, 100 100" opacity="1" style="fill:white;"></polygon>
-        </svg>
-      </div>
-
-    </section>
-
-    <section class="bg-contato espsection">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="divisor3 colorwhite text-center" >contato</h2>
-          </div>
+    <section>
+      <div class="bg-home-init">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="cor-clara">Explore um novo mundo clicando</h1>
+          <h1 class="cor-clara">aqui</h1>
         </div>
       </div>
     </section>
