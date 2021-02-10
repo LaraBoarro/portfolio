@@ -6,12 +6,41 @@ h1{
     font-size: 4rem;
 }
 
+h2{
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
 p {
     font-family: 'Baloo Paaji 2', cursive;
+    font-size: 1.2rem;
 }
 
 .cor-clara {
     color: #edf2c2;
+}
+
+.cor-escura {
+    color: #172601;
+}
+
+.cor-meio-escura {
+    color: #3e5902;
+}
+
+.cor-meio-clara {
+    color: #77a612;
+}
+
+.spacesection {
+    padding: 2rem 0;
+}
+
+.text-shadow-title {
+    text-shadow: 0 0 10px black;
 }
 /*========HEADER=========*/
 
@@ -23,20 +52,20 @@ header .navbar-nav .nav-item .nav-link {
     padding: .5rem 1.5rem;
 }
 
-.bg-nav-green1{
+header .navbar-nav .nav-item .bg-nav-green1{
     background-color: #77a612;
 }
 
-.bg-nav-green2{
+header .navbar-nav .nav-item .bg-nav-green2{
     background-color: #3e5902;
 }
 
-.bg-nav-green3{
+header .navbar-nav .nav-item .bg-nav-green3{
     background-color: #ecf22e;
     color:#172601;
 }
 
-.bg-nav-green4{
+header .navbar-nav .nav-item .bg-nav-green4{
     background-color: #edf2c2;
     color: #172601;
 }
@@ -63,4 +92,42 @@ header .navbar-nav .nav-item:hover .nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/*=============Palos Verdes Blue============*/
+
+.bg-palos {
+    width: 100%;
+    background-image: url(../images/bgpalos.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg-palos .img-fluid-palos {
+    max-width: 630px;
+    width: 100%;
+    height: auto;
+}
+
+/*==========all==========*/
+
+h2{
+    background-color:#ffffff75;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    margin: 0;
+}
+
+.card-infos-text {
+    background-color: #000000a3;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    max-width: 430px;
 }
