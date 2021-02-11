@@ -271,7 +271,11 @@ h2{
     max-width: 430px;
 }
 
-@media (min-width:992px) and (max-width: 1200px;){
+.animate__animated {
+    visibility: hidden;
+}
+
+@media (min-width:992px) and (max-width: 1200px){
     .bg-transparente {
         background-color: rgba(255, 255, 255, 0.445);
     }
