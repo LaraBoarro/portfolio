@@ -10,8 +10,18 @@ h2{
     font-size: 3rem;
 }
 
+@media (max-width:768px) {
+    h2{
+        text-align: center;
+    }
+}
+
 h3 {
     font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p {
@@ -38,6 +48,15 @@ ol li::marker{
     border-radius: 0;
     backdrop-filter: blur(10px);
     margin:3rem 0;
+    padding: 0 .5rem;
+    color: #172601;
+}
+
+.btn-prox:hover {
+    color: white;
+    background-color: #172601c7;
+    transition: all .5s;
+    text-decoration: none;
 }
 
 .cor-clara {
@@ -57,7 +76,7 @@ ol li::marker{
 }
 
 .spacesection {
-    padding: 8rem 0;
+    padding: 5rem 0;
 }
 
 .text-shadow-title {
@@ -103,6 +122,11 @@ header .navbar-nav .nav-item:hover .nav-link {
     transition: all .5s;
 }
 
+@media (max-width:576px) {
+    .navbar-brand{
+        max-width: 90px;
+    }
+}
 /*=========Home init==========*/
 
 .bg-home-init {
@@ -121,7 +145,7 @@ header .navbar-nav .nav-item:hover .nav-link {
 
 .bg-palos {
     width: 100%;
-    background-image: url(../images/bgpalos.png);
+    background-image: url(../images/bgpalos4.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -159,6 +183,76 @@ ol li.venenosa::marker {
     margin: 3rem 0;
     top: 12px;
 }
+
+/*==========andorinha============*/
+
+.bg-andorinha {
+    width: 100%;
+    background-image: url(../images/bgandorinha.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*============alexandra===========*/
+
+.bg-alexandra {
+    width: 100%;
+    background-image: url(../images/bgalexandra.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-alexandra .infos-alexandra {
+    text-align: center;
+}
+
+.bg-alexandra .infos-alexandra > *{
+    display: inline;
+} 
+
+.borboleta-alexandra {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width:992px){
+    .borboleta-alexandra {
+        max-width: 1040px;
+        position: absolute;
+        top: -8rem;
+        transform: rotate(-8deg);
+        left: -25rem;
+        height: auto;
+        z-index: 2;
+    }
+}
+
+
+/*============morpho============*/
+
+.bg-morpho {
+    width: 100%;
+    background-image: url(../images/bgmorpho.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 0;
+}
+
+/*=========footer=========*/
+.bg-footer {
+    background-color: #172601;
+    padding: 2rem 0;
+}
+
 /*==========all==========*/
 
 h2{
@@ -175,4 +269,10 @@ h2{
     -webkit-backdrop-filter: blur(10px);
     padding: 1rem;
     max-width: 430px;
+}
+
+@media (min-width:992px) and (max-width: 1200px;){
+    .bg-transparente {
+        background-color: rgba(255, 255, 255, 0.445);
+    }
 }
