@@ -1,5 +1,5 @@
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Oregano', cursive;
+h1, h2, h3, h4, h5, h6, a, button {
+    font-family: 'Caveat', cursive;
 }
 
 h1{
@@ -19,6 +19,27 @@ p {
     font-size: 1.2rem;
 }
 
+ol{
+    list-style-type: inherit;
+    color: #3e5902;
+}
+
+ol li{
+    margin: 2rem 0;
+}
+
+ol li::marker{
+    font-size: 2.5rem;
+}
+
+.btn-prox {
+    font-size: 2rem;
+    background-color: #ffffff96;
+    border-radius: 0;
+    backdrop-filter: blur(10px);
+    margin:3rem 0;
+}
+
 .cor-clara {
     color: #edf2c2;
 }
@@ -36,7 +57,7 @@ p {
 }
 
 .spacesection {
-    padding: 2rem 0;
+    padding: 8rem 0;
 }
 
 .text-shadow-title {
@@ -73,6 +94,7 @@ header .navbar-nav .nav-item .bg-nav-green4{
 .navbar-fixed {
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 header .navbar-nav .nav-item:hover .nav-link {
@@ -105,7 +127,6 @@ header .navbar-nav .nav-item:hover .nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .bg-palos .img-fluid-palos {
@@ -113,7 +134,31 @@ header .navbar-nav .nav-item:hover .nav-link {
     width: 100%;
     height: auto;
 }
+/*===============monarca=============*/
 
+.bg-monarca{
+    background-color: #EEEEEE;
+}
+ol li.curiosidade::marker {
+    color:#77a612;
+}
+ol li.venenosa::marker {
+    color:red;
+}
+
+.infos-lists{
+    max-width: 430px;
+    margin: 0 2rem;
+    z-index: 1;
+}
+
+.linha-lista{
+    border-right: 5px solid #77a612;
+    position: relative;
+    right: -6px;
+    margin: 3rem 0;
+    top: 12px;
+}
 /*==========all==========*/
 
 h2{

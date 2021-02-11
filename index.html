@@ -10,8 +10,8 @@
 
     <!--Font Style-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -45,10 +45,10 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav justify-content-around">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Palos<span class="sr-only">(current)</span></a>
+                <a class="nav-link scrollar" href="#palosverdesblue">Palos</a>
               </li>
               <li class="nav-item">
-                <a class=" bg-nav-green2 nav-link" href="#">Monarca</a>
+                <a class=" bg-nav-green2 nav-link scrollar" href="#monarca">Monarca</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link bg-nav-green1" href="#">Andorinha</a>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="palosverdesblue">
       <div class="bg-palos spacesection">
         <div class="container">
           <div class="row">
@@ -95,32 +95,58 @@
               <img src="images/palosverderara.png" class="img-fluid-palos" alt="Borboleta Azul Palos Verdes, mais rara do mundo.">
             </div>
           </div>
+          <div class="row justify-content-center">
+            <button class="btn btn-prox">Próximo
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="monarca">
       <div class="bg-monarca spacesection">
         <div class="container">
-          <div class="row">
-            <div class="col-md-8">
+          <div class="row justify-content-around align-items-center">
+            <div class="col-md-5">
               <h1 class="text-center cor-meio-escura">Borboleta Monarca</h1>
-              <div>
+              <div style="position: relative;">
                 <img src="images/monarca.png" class="img-fluid" alt="Borboleta Monarca Venenosa">
+                <div style="display: inline-block;position: absolute;bottom: -20px;right: 25px;transform: rotate(-5deg);">
+                  <div class="d-flex justify-content-center align-items-center" style="background-color: red;padding: 0 10px;height: 55px;box-shadow: 0 0 10px #00000078;">
+                    <div>
+                      <p style="font-weight: bold;margin-top: .5rem;margin-bottom: 0;">PERIGO!</p>
+                      <p style="font-weight: bold;margin: 0;position: relative;bottom: 10px;">VENENOSO</p>
+                    </div>
+                    <img style="width: 55px; height: auto;position: relative;bottom: 4px;" src="images/warning.png" alt="Caveira indicando perigo!">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div>
-                <ul>
-                  <li><h3 class="cor-meio-clara">Curiosidades</h3></li>
+            <div class="col-md-5 d-flex">
+              <div class="linha-lista"></div>
+              <div class="infos-lists">
+                <ol>
+                  <li class="curiosidade"><h3 class="cor-meio-clara">Curiosidades</h3></li>
                   <li><p>Nativas da América do Norte e do Sul. Elas têm ampla distribuição nas Américas de um modo geral, mas também foram reportadas para Nova Zelândia e Austrália.</p></li>
                   <li><p>Conhecidas por suas longas migrações anuais durante o inverno, o que gera um dos mais bonitos fenômenos entre os animais.</p></li>
-                  <li><h1 style="color:red;">Venenosa?</h1></li>
+                  <li class="venenosa"><h1 style="color:red;">Venenosa?</h1></li>
                   <li><p> A monarca, em função de suas cores vivas, praticamente avisa a seus predadores que tem gosto desagradável, que pode causar diversas reações a quem tenta comê-las, de náuseas à morte. E, de certo modo, seus inimigos naturais entendem o recado. Tanto que algumas borboletas usam deste artifício para enganar suas presas e literalmente imitam as monarcas. É o chamado mimetismo, considerado pelos estudiosos como uma estratégia de defesa.</p></li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
+
+          <div class="row justify-content-center">
+            <button class="btn btn-prox">Próximo
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
@@ -130,5 +156,9 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!--CUSTOM-->
+    <script scr="js/custom.js"></script>
+
   </body>
 </html>
