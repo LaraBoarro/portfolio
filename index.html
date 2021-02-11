@@ -22,6 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
 
+    <!--Animacoes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,7 +37,7 @@
     <header>
       <div class="menu-fixed">
         <nav class="navbar navbar-expand-lg navbar-fixed">
-          <a class="navbar-brand" href="#"><img src="images/lboarrobrancadeitadasombra.png" alt="Logo Lara Boarro"></a>
+          <a class="navbar-brand scrollar" href="#home"><img class="img-fluid" src="images/lboarrobrancadeitadasombra.png" alt="Logo Lara Boarro"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
@@ -51,13 +54,13 @@
                 <a class=" bg-nav-green2 nav-link scrollar" href="#monarca">Monarca</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-nav-green1" href="#">Andorinha</a>
+                <a class="nav-link bg-nav-green1 scrollar" href="#andorinha">Andorinha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-nav-green4" href="#">Alexandra</a>
+                <a class="nav-link bg-nav-green4 scrollar" href="#alexandra">Alexandra</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-nav-green3" href="#">Morpho</a>
+                <a class="nav-link bg-nav-green3 scrollar" href="#morpho">Morpho</a>
               </li>
             </ul>
           </div>
@@ -65,7 +68,7 @@
       </div>
     </header>
 
-    <section>
+    <section id="home">
       <div class="bg-home-init">
         <div class="d-flex flex-column align-items-center">
           <h1 class="cor-clara text-center">Explore um mundo novo</h1>
@@ -76,12 +79,12 @@
     <section id="palosverdesblue">
       <div class="bg-palos spacesection">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
 
             <div class="col-md-4 d-flex flex-column align-items-center">
 
-                <h2 class="cor-escura text-center">Palos Verdes Blue</h2>
-                <div class="card-infos-text">
+                <h2 class="cor-escura text-center animate__animated">Palos Verdes Blue</h2>
+                <div class="card-infos-text animate__animated">
                   <p class="cor-clara"><span style="font-size:2.5rem;">1.</span> Foi descoberta no início dos anos 1970.</p>
                   <p class="cor-clara"><span style="font-size:2.5rem;">2.</span> Encontrada na Península de Palos Verdes, no condado de Los Angeles.</p>
                   <p class="cor-clara"><span style="font-size:2.5rem;">3.</span> Por 11 anos, foi considerada extinta.</p>
@@ -96,11 +99,11 @@
             </div>
           </div>
           <div class="row justify-content-center">
-            <button class="btn btn-prox">Próximo
+            <a class="btn-prox scrollar" href="#monarca">Próximo
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -140,25 +143,160 @@
           </div>
 
           <div class="row justify-content-center">
-            <button class="btn btn-prox">Próximo
+            <a href="#andorinha" class="btn btn-prox scrollar">Próximo
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
               </svg>
-            </button>
+            </a>
           </div>
 
         </div>
       </div>
     </section>
 
+    <section id="andorinha">
+      <div class="bg-andorinha spacesection">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-md-5 d-flex flex-column align-items-center">
+
+                <h2 class="cor-escura text-center">Borboleta<br>Rabo-de-Andorinha</h2>
+                <div class="card-infos-text">
+                  <p class="cor-clara"><span style="font-size:2.5rem;">1.</span> Distribui-se pela Europa, Ásia e Norte de África. No nosso país é bastante comum.</p>
+                  <p class="cor-clara"><span style="font-size:2.5rem;">2.</span> Um jardim florido e com muita diversidade de plantas, é meio caminho andado para podermos observar perto de casa esta e muitas outras espécies de borboletas que se alimentarão do néctar das flores.</p>
+                  <p class="cor-clara"><span style="font-size:2.5rem;">3.</span> Considerada por muitos uma das mais belas. Chega a medir 8mm de envergadura.</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-7 d-flex flex-column align-items-center">
+              <h1 class="cor-clara text-center text-shadow-title">Eleita a mais bonita!</h1>
+              <img src="images/andorinha.png" class="img-fluid" alt="Borboleta Rabo de andorinha a mais bela de todas">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <a class="btn-prox scrollar" href="#alexandra">Próximo
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alexandra">
+      <div class="bg-alexandra">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="cor-meio-clara">Rainha Alexandra <br>Birdwings</h2>
+              <div style="position: relative;">
+                <img class="borboleta-alexandra" src="images/alexandramacho.png" alt="Borboleta Rainha Alexandra Maior do Mundo!">
+              </div>
+            </div>
+            <div class="col-md-6 bg-transparente">
+              <h1 class="cor-escura text-center">A maior de todas!</h1>
+              <div class="infos-alexandra">
+                <h3>Habitat</h3><p>:  A Rainha Alexandra Birdwings é encontrada apenas nas florestas de Papua-Nova Guiné. Sua principal característica, além do tamanho, é ter machos e fêmeas bem diferentes.</p>
+              </div>
+
+              <div class="infos-alexandra">
+                <h3>Características</h3>
+                <p>: Os machos são menores, mas têm mais cores. Eles chegam a 19 cm e têm asas nas cores verde-elétrica e água-marinha, com abdômen amarelo. Por outro lado, as fêmeas tem corpos e asas marrons, mas são as responsáveis pelo recorde. Cada Rainha Alexandra fêmea tem uma envergadura que chega a 31 cm.</p>
+              </div>
+
+              <div class="infos-alexandra">
+                <h3>Ameaça de extinção</h3>
+                <p>: Com o passar do tempo, causas naturais e humanas têm prejudicado o desenvolvimento das borboletas Rainha Alexandra. Em 1951, por exemplo, a erupção do vulcão Monte Lamington destruiu grandes áreas de habitat natural.</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a class="btn-prox scrollar" href="#morpho">Próximo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="morpho">
+      <div class="bg-morpho">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <h1 class="cor-escura" style="line-height: 3rem;margin-top: 5rem;">Provavelmente você já viu uma dessa...</h1>
+            </div>
+          </div>
+          <div class="row justify-content-around align-items-center">
+  
+            <div class="col-md-5 d-flex">
+              <div class="linha-lista"></div>
+              <div class="infos-lists">
+                <ol>
+                  <li class="curiosidade"><h3 class="cor-meio-clara">Curiosidades</h3></li>
+                  <li><p>Muito comum nas florestas brasileiras, também se encontram nas florestas tropicais da América central e da América do Sul: Costa Rica, Guiana e Venezuela mas também no México.</p></li>
+                  <li><p>Deslumbrantes asas azuis. Uma característica bem comum nas 29 espécies e 147 subespécies descritas até hoje.</p></li>
+                  <li><p>Outra característica das asas destas borboletas são o tamanho avantajado em relação ao corpo. As borboletas Morpho podem ter uma envergadura de pouco mais de 7cm à impressionantes 20 cm (uma régua escolar).</p></li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="col-md-5" style="margin: 1rem 0">
+              <div style="position: relative;">
+                <img src="images/monarca.png" class="img-fluid" alt="Borboleta Monarca Venenosa">
+                <h2 class="cor-escura text-center">Borboleta Morpho</h2>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <ul>
+                <li><h4 class="cor-clara">Contato</h4></li>
+                <li><p class="cor-clara m-0" style="font-size: 1rem;">Lara Boarro</p></li>
+                <li><p class="cor-clara m-0" style="font-size: 1rem;">larasouzab@gmail.com</p></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 d-flex">
+              <img src="images/lboarrobrancadeitadasombra.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><h4 class="cor-clara">Fontes</h4></li>
+                <li><p class="cor-clara m-0" style="font-size: 1rem;">Backgrounds: Freepik</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-copyright">
+        <p class="text-center m-2">© 2021 Lara Boarro ® - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!--CUSTOM-->
-    <script scr="js/custom.js"></script>
+    <script src="js/custom.js"></script>
 
   </body>
 </html>
