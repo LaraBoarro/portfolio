@@ -1,3 +1,4 @@
+//SCROLL LINKS DA PÁGINA
 $(document).ready(function(){
     $(".scrollar").on('click', function(event) {
 
@@ -25,6 +26,7 @@ function boxTop(idBox) {
 
 $(document).ready(function() {
 	
+	//CONTEUDOS APARECENDO
 	var $target2 = $('.fadeRight'),
 		$target = $('.fadeLeft'),
 			
@@ -74,4 +76,21 @@ $(document).ready(function() {
 			animeScroll2()
 		}, 150);
 	});
+
+	//SCROLL TO TOP
+	$(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a[href="#top"]').fadeIn();
+        } else {
+            $('a[href="#top"]').fadeOut();
+        }
+    });
+
+    $('a[href="#top"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+
+
 });
