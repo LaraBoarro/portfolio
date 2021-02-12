@@ -246,13 +246,19 @@ ol li.venenosa::marker {
 
 .bg-morpho {
     width: 100%;
-    background-image: url(../images/bgmorpho.png);
+    background-image: url(../images/bgmorpho2.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     padding:3rem 0;
+}
+
+@media(min-width:768px){
+    .bg-morpho {
+        background-image: url(../images/bgmorpho.png);
+    }
 }
 
 /*=========footer=========*/
