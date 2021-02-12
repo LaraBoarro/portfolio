@@ -116,6 +116,14 @@ header .navbar-nav .nav-item .bg-nav-green4{
     z-index: 5;
 }
 
+@media (max-width:576px){
+    .navbar-fixed {
+        background-color: #ffffff63;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
 header .navbar-nav .nav-item:hover .nav-link {
     background: #11140d;
     color: #fff;
@@ -278,5 +286,34 @@ h2{
 @media (min-width:992px) and (max-width: 1200px){
     .bg-transparente {
         background-color: rgba(255, 255, 255, 0.445);
+    }
+}
+
+/*=======botão scroll to top=======*/
+
+a[href="#top"]{
+    position:fixed;
+    bottom: 2rem;
+    right:2rem;
+    display:none;
+    color: white;
+    transition: all .2s;
+    background-color: #172601;
+    z-index: 9999;
+    padding: 8px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+    transition: all .2s;
+    box-shadow: 3px 3px 0px #77a612;
+}
+
+@media (max-width:576px){
+    a[href="#top"] > svg{
+        width: 20px;
+    }
+    a[href="#top"] {
+        bottom: 1rem;
+        right:1rem;
     }
 }
