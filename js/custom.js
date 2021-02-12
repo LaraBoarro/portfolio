@@ -107,8 +107,13 @@ $(document).ready(function() {
 		$(this).attr('src','images/' + imagem + '.png');
 	};
 
+	var largura_tela = $(window).width();
 
-	$('.troca-imagem').hover( showImg, offImg);
+	if ( largura_tela < 992 ){
+		
+	} else {
+		$('.troca-imagem').hover( showImg, offImg);
+	}
 
 
 });
