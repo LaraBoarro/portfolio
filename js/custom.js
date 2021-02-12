@@ -106,13 +106,7 @@ $(document).ready(function() {
 
 		$(this).attr('src','images/' + imagem + '.png');
 	};
-
-<<<<<<< Updated upstream
-
+	
 	$('.troca-imagem').hover( showImg, offImg);
-
-=======
-	$('.troca-imagem').hover( showImg, offImg);
->>>>>>> Stashed changes
 
 });
