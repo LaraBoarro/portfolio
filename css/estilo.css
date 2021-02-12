@@ -116,6 +116,14 @@ header .navbar-nav .nav-item .bg-nav-green4{
     z-index: 5;
 }
 
+@media (max-width:576px){
+    .navbar-fixed {
+        background-color: #ffffff63;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
 header .navbar-nav .nav-item:hover .nav-link {
     background: #11140d;
     color: #fff;

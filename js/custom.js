@@ -91,6 +91,24 @@ $(document).ready(function() {
         return false;
     });
 
+	//images trocam no hover ou click
+
+	function showImg(){
+		var imagem = $(this).attr('id');
+
+		$(this).fadeIn('slow', function(){
+			$(this).attr('src','images/' + imagem + '2.png');
+		});
+	};
+
+	function offImg(){
+		var imagem = $(this).attr('id');
+
+		$(this).attr('src','images/' + imagem + '.png');
+	};
+
+
+	$('.troca-imagem').hover( showImg, offImg);
 
 
 });
