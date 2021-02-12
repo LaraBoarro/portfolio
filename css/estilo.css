@@ -75,6 +75,14 @@ ol li::marker{
     color: #77a612;
 }
 
+.cor-forte{
+    color: #ecf22e;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 .spacesection {
     padding: 5rem 0;
 }
