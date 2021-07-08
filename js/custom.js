@@ -115,7 +115,6 @@ var geocoder;
 var map;
 var marker;
 
-alert('oi');
   function initialize() {
     var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
     var options = {
